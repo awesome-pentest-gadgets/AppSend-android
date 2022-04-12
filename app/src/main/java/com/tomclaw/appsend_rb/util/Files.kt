@@ -8,7 +8,7 @@ import com.tomclaw.appsend_rb.dto.AppEntity
 import java.io.File
 
 fun getApkPrefix(item: AppEntity): String {
-    return escapeFileSymbols(item.packageName + "_" + item.versionName)
+    return escapeFileSymbols(item.label + "_" + item.versionName + "-" + item.versionCode)
 }
 
 fun getApkSuffix(): String {
